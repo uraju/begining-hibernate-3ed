@@ -76,4 +76,20 @@ public class Employee {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }
+    @Override
+    public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Employee [id=")
+				.append(id)
+				.append(", section=")
+				.append(section)
+				.append(", department=")
+				.append(department)
+				.append(", name=")
+				.append(name)
+				.append(", hashCode()=")
+				.append(hashCode())
+				.append("]");
+		return builder.toString();
+    }    
 }
