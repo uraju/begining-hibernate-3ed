@@ -60,6 +60,9 @@ public void testGetByNaturalId() {
 			.using("section", 11)
 			.using("department", 292)
 			.getReference();
+	assertNotNull(eorwax);
+	System.out.println("testGetByNaturalId initial: " + initial);
+	System.out.println("testGetByNaturalId eorwax : " + eorwax );
 	assertEquals(initial, eorwax);
 
 	tx.commit();
